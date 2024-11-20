@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi Sayısı Projesi</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <h3>Pi Sayısı Basamak Hesaplama</h3>
+        <div class="inputs">
+            <input type="number" id="basamakSayisiInput" placeholder="Basamak Sayısı Girin">
+            <button id="hesaplaButon">Hesapla</button>
+        </div>
+        <div class="results">
+            <div class="estimatedSecond" id="estimatedSecond">
+                <h3 style="margin-bottom: 20px;">Hesaplanıyor...</h3>
+                <h4 style="margin-bottom: 5px;">Tahmini Hesap Süresi:</h4>
+                <span id="tahminiHesapSuresi1" style="color: purple;">--</span>
+            </div>
+            <div class="calcInfo" id="calcInfo">
+                <h3>Hesaplama Bilgileri:</h3>
+                <br>
+                <h4>Basamak Sayısı</h4>
+                <span id="basamakSayisi" style="color: blue;">--</span>
+                <h4>Hesaplama Süresi:</h4>
+                <span id="hesapSuresi" style="color: green;">--</span>
+                <h4>Tahmini Hesap Süresi:</h4>
+                <span id="tahminiHesapSuresi2" style="color: purple;">--</span>
+                <h4>Tahmini Hesap Yanılma Süresi:</h4>
+                <span id="tahminiHesapYanilma" style="color: red;">--</span>
+            </div>
+            <div class="result" id="resultDiv">
+                <h4 style="margin-bottom: 5px;">Sonuç:</h4>
+                <span id="result">--</span>
+                <button onclick="copyResult()">Kopyala</button>
+            </div>
+        </div>
+    </div>    
+
+    <script src="app.js"></script>
+</body>
+
+</html>
